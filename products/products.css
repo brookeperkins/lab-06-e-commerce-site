@@ -8,12 +8,35 @@ body {
     --color5: hsla(149, 26%, 63%, 1);
     
     --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
+    --shadow: 0px 10px 20px -12px var(--color1);
     --gutter: 30px;
     --footer-height: 30px;
     
     font-family: 'Nunito Sans', sans-serif;
     background-color: var(--color2);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px var(--color5);
+    color: var(--color2);
+    background-color: var(--color1);
+    height: var(--header-height);
+}
+
+nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+a {
+    color: var(--color5);
+    font-size: .5rem;
+    padding: 5px;
+    margin: 10px;
 }
 
 main {
@@ -39,22 +62,6 @@ section {
     border: solid 2px var(--color5);
 }
 
-header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
-}
-
-footer {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
-}
-
-
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
@@ -65,31 +72,7 @@ h2 {
     margin-right: 20px;
 }
 
-#book-button {
-    margin: 40px;
-    padding: 5px;
-    background-color: var(--color5);
-    border-radius: 2px;
-    border: 2px solid var(--color4);
-    
-}
-
-#book-button:hover {
-    transition-duration: 0.4s;
-    background-color: var(--color2);
-    color: var(--color5);
-}
 
 p {
     margin: var(--gutter);
-}
-  
-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: var(--footer-height);
-    display: flex;
-    justify-content: center;
-    font-size: .5rem;
 }
