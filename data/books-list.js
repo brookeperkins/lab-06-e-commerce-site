@@ -48,9 +48,12 @@ const book5 = {
     cost: 11.00
 };
 
+const books = {
+    book1,
+    book2,
+    book3,
+    book4,
+    book5
+};
 
-
-/* <li class="novel" title="Classic novel by Toni Morrison about life after slavery, with ghosts!">
-<h3>Beloved</h3>
-<img src="/assets/book1.jpg" alt="Beloved image">
-<p class="price">$15.00<button value="book">Add</button></p></li> */
+export default books;
