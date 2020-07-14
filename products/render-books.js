@@ -1,6 +1,6 @@
 export renderBooks(book) {
     const li = document.createElement('li');
-    
+    const category = 
 
 }
 
