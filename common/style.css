@@ -1,6 +1,5 @@
 
 body {
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
     --color1: hsla(50, 71%, 60%, 1);
     --color2: hsla(22, 26%, 96%, 1);
     --color3: hsla(5, 31%, 97%, 1);
@@ -8,8 +7,7 @@ body {
     --color5: hsla(149, 26%, 63%, 1);
     
     --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
-    --gutter: 30px;
+    --default-margin: 30px;
     --footer-height: 30px;
     
     font-family: 'Nunito Sans', sans-serif;
@@ -21,7 +19,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
 }
 
 section {
@@ -32,10 +29,10 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
+    padding-top: var(--default-margin);
+    padding-bottom: var(--default-margin);
+    margin-top: var(--default-margin);
+    margin-bottom: var(--default-margin);
     border: solid 2px var(--color5);
 }
 
@@ -61,10 +58,6 @@ h2 {
     color: var(--color3)
 }
 
-.gutter-right {
-    margin-right: 20px;
-}
-
 #book-button {
     margin: 40px;
     padding: 5px;
@@ -81,7 +74,7 @@ h2 {
 }
 
 p {
-    margin: var(--gutter);
+    margin: var(--default-margin);
 }
   
 footer {
