@@ -47,6 +47,8 @@ main {
     margin-bottom: calc(var(--footer-height));
 }
 
+
+
 section {
     background-color: var(--color1);
     width: 1000px;
@@ -75,4 +77,8 @@ h2 {
 
 p {
     margin: var(--gutter);
+}
+
+ol, ul {
+	list-style: none;
 }
