@@ -48,12 +48,12 @@ const book5 = {
     cost: 11.00
 };
 
-const books = {
+const books = [
     book1,
     book2,
     book3,
     book4,
     book5
-};
+];
 
 export default books;
