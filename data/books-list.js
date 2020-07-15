@@ -1,5 +1,5 @@
 const book1 = {
-    id: 'beloved',
+    id: 'book1',
     name: 'Beloved',
     image: 'book1.jpg',
     description: 'Classic novel by Toni Morrison about life after slavery, with ghosts!',
@@ -9,7 +9,7 @@ const book1 = {
 };
 
 const book2 = {
-    id:'caged-bird',
+    id:'book2',
     name: 'I Know Why The Caged Bird Sings',
     image: 'book2.png',
     description: 'Powerful autobiography by Maya Angelou.',
@@ -19,7 +19,7 @@ const book2 = {
 };
 
 const book3 = {
-    id: 'antiracist',
+    id: 'book3',
     name: 'How To Be An AntiRacist',
     image: 'book3.png',
     description: 'Essential reading by Ibram X Kendi.',
@@ -29,7 +29,7 @@ const book3 = {
 };
 
 const book4 = {
-    id: 'heavy',
+    id: 'book4',
     name: 'Heavy',
     image: 'book4.png',
     description: 'Moving autobiography about racism and the body by Kiese Laymon.',
@@ -39,7 +39,7 @@ const book4 = {
 };
 
 const book5 = {
-    id: 'white-fragility',
+    id: 'book5',
     name: 'White Fragility',
     image: 'book5.jpg',
     description: 'Another great book for your antiracist reading list, by Robin DiAngelo.',
