@@ -11,7 +11,7 @@ export function renderBooks(book) {
     li.append(h3);
 
     const img = document.createElement('img');
-    img.src = './assets/' + book.image;
+    img.src = '../assets/' + book.image;
     img.alt = book.name + ' cover';
     li.append(img);
 
