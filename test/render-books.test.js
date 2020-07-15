@@ -15,7 +15,7 @@ test('renders a book', assert => {
         price: 15.00,
         cost: 7.50
     };
-    const expected = '<li class="novel" title="Classic novel by Toni Morrison about life after slavery, with ghosts!"><h3>Beloved</h3><img src="./assets/book1.jpg" alt="Beloved cover"><p class="price">$15.00<button value="book">Add</button></p></li>';
+    const expected = '<li class="novel" title="Classic novel by Toni Morrison about life after slavery, with ghosts!"><h3>Beloved</h3><img src="../assets/book1.jpg" alt="Beloved cover"><p class="price">$15.00<button value="book">Add</button></p></li>';
     
     const dom = renderBooks(book);
     const html = dom.outerHTML;

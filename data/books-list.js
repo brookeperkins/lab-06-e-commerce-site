@@ -1,7 +1,7 @@
 const book1 = {
     id: 'beloved',
     name: 'Beloved',
-    image: '/book1.jpg',
+    image: 'book1.jpg',
     description: 'Classic novel by Toni Morrison about life after slavery, with ghosts!',
     category: 'novel',
     price: 15.00,
@@ -11,7 +11,7 @@ const book1 = {
 const book2 = {
     id:'caged-bird',
     name: 'I Know Why The Caged Bird Sings',
-    image: '/book2.png',
+    image: 'book2.png',
     description: 'Powerful autobiography by Maya Angelou.',
     category: 'autobiography',
     price: 10.00,
@@ -21,7 +21,7 @@ const book2 = {
 const book3 = {
     id: 'antiracist',
     name: 'How To Be An AntiRacist',
-    image: '/book3.png',
+    image: 'book3.png',
     description: 'Essential reading by Ibram X Kendi.',
     category: 'nonfiction',
     price: 15.00,
@@ -31,7 +31,7 @@ const book3 = {
 const book4 = {
     id: 'heavy',
     name: 'Heavy',
-    image: '/book4.png',
+    image: 'book4.png',
     description: 'Moving autobiography about racism and the body by Kiese Laymon.',
     category: 'autobiography',
     price: 20.00,
@@ -41,7 +41,7 @@ const book4 = {
 const book5 = {
     id: 'white-fragility',
     name: 'White Fragility',
-    image: '/book5.jpg',
+    image: 'book5.jpg',
     description: 'Another great book for your antiracist reading list, by Robin DiAngelo.',
     category: 'nonfiction',
     price: 17.00,
