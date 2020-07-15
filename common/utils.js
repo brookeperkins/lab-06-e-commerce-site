@@ -1,11 +1,11 @@
-export function findById(books, id) {
+export function findById(someArray, someId) {
+    let matchItem = null;
 
-    for (let i = 0; i < books.length; i++) {
-        const item = books[i];
-
-        if (item.id === books[i].id) {
-            return item;
+    for (let i = 0; i < someArray.length; i++) {
+        if (someId === someArray[i].id) {
+            matchItem = someArray[i];
         }
     }
-    return null;
+    return matchItem;
 }
+
