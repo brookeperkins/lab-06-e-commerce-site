@@ -25,7 +25,7 @@ test('find product by id returns null if not found', assert => {
     assert.equal(foundBook, expected);
 });
 
-test('takes quantity and price and returns the total price', assert => {
+test('calculate line total', assert => {
     const quantity = 2;
     const price = 10.00;
     const expected = 20.00;

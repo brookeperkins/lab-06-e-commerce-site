@@ -1,7 +1,5 @@
 export function findById(someArray, someId) {
     let matchItem = null;
-    console.log(someArray);
-    console.log(someId);
 
     for (let i = 0; i < someArray.length; i++) {
         if (someId === someArray[i].id) {
