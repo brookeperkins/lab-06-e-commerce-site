@@ -2,6 +2,7 @@
 import books from '../data/books-list.js';
 import { findById } from '../common/utils.js';
 import { calcLineTotal, calcOrderTotal } from '../common/utils.js';
+import cart from '../data/cart.js';
 
 const test = QUnit.test;
 QUnit.module('Utilities');
