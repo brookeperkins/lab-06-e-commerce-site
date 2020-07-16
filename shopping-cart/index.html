@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shopping Cart</title>
-    <link rel="stylesheet" href="../common/main.css">
     <link rel="stylesheet" href="shopping-cart.css">
 </head>
 <body>
     <header>
         <h1>BROOKE'S BOOKS</h1>
         <nav>
-            <a href="../">Home</a>
-            <a href="../products">Browse Books</a>
-            <a href="./shopping-cart">Shopping Cart</a>
+            <a href="../">HOME</a>
+            <a href="../products">BROWSE BOOKS</a>
+            <a href="./shopping-cart">CART</a>
         </nav>
     </header>
 
@@ -22,10 +21,10 @@
         <table>
             <thead>
                 <tr>
-                    <th class="align-left">Item</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                    <th>Total</th>
+                    <th class="align-left">ITEM</th>
+                    <th>QUANTITY</th>
+                    <th>PRICE</th>
+                    <th>TOTAL</th>
                 </tr>
             </thead>
 
@@ -37,16 +36,20 @@
                 <tr>
                     <th></th>
                     <th></th>
-                    <th>Order Total:</th>
+                    <th>ORDER TOTAL:</th>
                     <th id="order-total-cell"></th>
                 </tr>
             </tfoot>
         </table>
 
-        <p class="order-now-container">
-            <button>Place Order</button>
+        <p class="place-order">
+            <input type ="button" id="order-button" value="PLACE ORDER"/>
         </p>
     </main>
+    <footer>
+       LOOK! A BOOK! | BROOKE'S BOOKS | BOOKS FOREVER
+    </footer>
+
 
     <script type="module" src="shopping-cart.js"></script>
 </body>

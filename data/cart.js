@@ -2,19 +2,19 @@
 //does 'quantity' translate? it is suggesting 'number'
 
 const cart = [{
-    id: 'book1'
+    id: 'book1',
     quantity: 1
 }, {
-    id: 'book5'
+    id: 'book5',
     quantity: 3
 }, {
-    id: 'book2'
+    id: 'book2',
     quantity: 2
 }, {
-    id: 'book4'
+    id: 'book4',
     quantity: 1
 }, {
-    id: 'book3'
+    id: 'book3',
     quantity: 4
 }];
 

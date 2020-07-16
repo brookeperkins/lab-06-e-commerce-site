@@ -6,9 +6,9 @@ body {
     --color4: hsla(38, 35%, 99%, 1);
     --color5: hsla(149, 26%, 63%, 1);
     
-    --header-height: 80px;
     --default-margin: 30px;
     --footer-height: 30px;
+    --foot-pad: 20px;
     
     font-family: 'Nunito Sans', sans-serif;
     background-color: var(--color2);
@@ -36,22 +36,6 @@ section {
     border: solid 2px var(--color5);
 }
 
-header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
-}
-
-footer {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
-}
-
-
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
@@ -73,16 +57,22 @@ h2 {
     color: var(--color5);
 }
 
-p {
-    margin: var(--default-margin);
-}
-  
 footer {
     position: fixed;
-    width: 100%;
     bottom: 0;
-    height: var(--footer-height);
+    width: 1000px;
+    max-width: 80%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    font-size: .5rem;
+    align-items: center;
+    padding-top: var(--foot-pad);
+    padding-bottom: var(--foot-pad);
+    margin-top: var(--default-margin);
+    margin-bottom: var(--default-margin);
+    margin-left: 85px;
+    font-size: .7rem;
+    color: var(--color1);
+    background-color: var(--color3);
+    border: solid 1px var(--color5);
 }
