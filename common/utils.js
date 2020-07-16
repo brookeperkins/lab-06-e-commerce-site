@@ -30,3 +30,14 @@ export function calcOrderTotal(cart, books) {
 
     return roundCurrency(orderTotal);
 }
+
+export function getCart() {
+    const json = localStorage.getItem('CART');
+    let myCart;
+    if (json) {
+        myCart = JSON.parse(json);
+    } else {
+        myCart = [];
+    }
+    return myCart;
+}
