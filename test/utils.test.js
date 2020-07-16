@@ -36,12 +36,8 @@ test('calculate line total', assert => {
 });
 
 test('calculate order total', (assert) => {
-    // arrange
-    const expected = 22.30;
-
-    // act
+    const expected = 166.00;
     const orderTotal = calcOrderTotal(cart, books);
 
-    // assert
     assert.equal(orderTotal, expected);
 });

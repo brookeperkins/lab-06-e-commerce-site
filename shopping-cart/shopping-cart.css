@@ -25,11 +25,6 @@ header {
     height: var(--header-height);
 }
 
-nav {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
 
 a {
     color: var(--color5);
@@ -46,39 +41,6 @@ main {
     margin-bottom: calc(var(--footer-height));
 }
 
-#introduction {
-    font-size: .6rem;
-    font-style: italic;
-}
-
-section {
-    background-color: var(--color1);
-    width: 1000px;
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: var(--defaultmargin);
-    padding-bottom: var(--defaultmargin);
-    margin-top: var(--defaultmargin);
-    margin-bottom: var(--defaultmargin);
-    border: solid 2px var(--color5);
-}
-
-#books {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: .5rem;
-}
-
-h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--color3)
-}
-
 footer {
     position: fixed;
     width: 100%;
@@ -91,7 +53,64 @@ footer {
     background-color: var(--color5);
     border: solid 2px var(--color1);
 }
- 
-ol, ul {
-	list-style: none;
+
+/* Why does my footer have an annoying margin on 
+the left instead of spanning entire page? */
+
+
+table, .place-order {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+}
+
+.place-order {
+    margin-top: 5px;
+    text-align: right;
+}
+
+#order-button {
+    border: solid 2px var(--color4);
+    padding: 10px;
+    background-color: var(--color1);
+    font-size: .6rem;
+    border-radius: 5px;
+}
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 2px solid var(--color5);
+}
+
+thead {
+    background: var(--color1);
+    color: var(--color5);
+}
+
+table th, table td {
+    text-align: right;
+    padding: 5px;
+    font-size: .8rem;
+}
+
+.align-left {
+    text-align: left;
+}
+
+tbody {
+    background: white;
+}
+
+tbody tr:nth-child(even) {
+    background: var(--color3);
+}
+
+tbody td {
+    font-size: 0.9rem;
+}
+
+tfoot {
+    background: var(--color5);
+    color: var(--color2);
 }
