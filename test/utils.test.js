@@ -1,7 +1,7 @@
   
 import books from '../data/books-list.js';
 import { findById } from '../common/utils.js';
-import { calcLineTotal } from '../common/utils.js';
+import { calcLineTotal, calcOrderTotal } from '../common/utils.js';
 
 const test = QUnit.test;
 QUnit.module('Utilities');
@@ -33,4 +33,15 @@ test('calculate line total', assert => {
     const total = calcLineTotal(quantity, price);
 
     assert.equal(total, expected);
+});
+
+test('calculate order total', (assert) => {
+    // arrange
+    const expected = 22.30;
+
+    // act
+    const orderTotal = calcOrderTotal(cart, books);
+
+    // assert
+    assert.equal(orderTotal, expected);
 });

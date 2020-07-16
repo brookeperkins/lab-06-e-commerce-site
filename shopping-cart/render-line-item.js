@@ -1,4 +1,4 @@
-export function renderCartItems(cartItem, book) {
+export function renderLineItems(lineItem, book) {
     const tr = document.createElement('tr');
 
     const tdBookName = document.createElement('td');
@@ -6,14 +6,14 @@ export function renderCartItems(cartItem, book) {
     tdBookName.classList.add('align-left');
 
     const tdQuantity = document.createElement('td');
-    tdQuantity.textContent = cartItem.quantity;
+    tdQuantity.textContent = lineItem.quantity;
     
     const tdPrice = document.createElement('td');
     tdPrice.textContent = `$${book.price.toFixed(2)}`;
 
     const tdTotal = document.createElement('td');
-    tdTotal.classList.add('cart-item-total');
-    const totalPrice = (book.price * cartItem.quantity);
+    tdTotal.classList.add('line-item-total');
+    const totalPrice = (book.price * lineItem.quantity);
     tdTotal.textContent = `$${totalPrice.toFixed(2)}`;
 
     tr.appendChild(tdBookName);

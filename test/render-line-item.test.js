@@ -1,12 +1,12 @@
-import { renderCartItems } from '../shopping-cart/render-cart-item.js';
+import { renderLineItems } from '../shopping-cart/render-line-item.js';
 
 const test = QUnit.test;
 
-QUnit.module('Render Cart Items');
+QUnit.module('Render Line Items');
 
 test('renders a line item', assert => {
     // arrange
-    const cartItem = {
+    const lineItem = {
         id: 'book4',
         quantity: 4
     };
@@ -21,10 +21,10 @@ test('renders a line item', assert => {
         price: 20.00,
         cost: 15.00
     };
-    const expected = '<tr><td class="align-left">Heavy</td><td>4</td><td>$20.00</td><td class="cart-item-total">$80.00</td></tr>';
+    const expected = '<tr><td class="align-left">Heavy</td><td>4</td><td>$20.00</td><td class="line-item-total">$80.00</td></tr>';
 
     // act
-    const dom = renderCartItems(cartItem, book);
+    const dom = renderLineItems(lineItem, book);
     const html = dom.outerHTML;
     
     // assert

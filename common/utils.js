@@ -1,3 +1,5 @@
+import books from "../data/books-list.js";
+
 export function findById(someArray, someId) {
     let matchItem = null;
 
@@ -14,10 +16,19 @@ export function calcLineTotal(quantity, price) {
     return Math.round(total * 100) / 100;
 }
 
-// export function calOrderTotal(cart, books) {
-//     let orderTotal = 0;
+function roundCurrency(amount) {
+    return Math.round(amount * 100) / 100;
+}
 
-//     for (let i = 0; i < cart.length; i++) {
-//         const 
-//     }
-// }
+export function calcOrderTotal(cart, books) {
+    let orderTotal = 0;
+
+    for (let i = 0; i < cart.length; i++) {
+        const lineItem = cart[i];
+        const bookNoob = findById(books, lineItem.id);
+        const lineTotal = calcLineTotal(lineItem.quantity, bookNoob.price);
+        orderTotal += lineTotal;
+    }
+
+    return roundCurrency(orderTotal);
+}
