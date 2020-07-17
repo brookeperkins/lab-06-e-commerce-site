@@ -1,3 +1,4 @@
+import books from '../data/books-list.js';
 export function findById(someArray, someId) {
     let matchItem = null;
 
@@ -40,4 +41,16 @@ export function getCart() {
         myCart = [];
     }
     return myCart;
+}
+
+export function finalOrder() {
+    const cart = getCart();
+    let orderDetails = [];
+    for (let i = 0; i < cart.length; i++) {
+        const cartItem = cart[i];
+        const book = findById(books, cartItem.id);
+        const eachOrder = (` ${cartItem.quantity} of ${book.name}`);
+        orderDetails.push(eachOrder);
+    }
+    return orderDetails;
 }
