@@ -1,3 +1,4 @@
+import books from '../data/books-list.js';
 export function findById(someArray, someId) {
     let matchItem = null;
 
@@ -29,4 +30,27 @@ export function calcOrderTotal(cart, books) {
     }
 
     return roundCurrency(orderTotal);
+}
+
+export function getCart() {
+    const json = localStorage.getItem('CART');
+    let myCart;
+    if (json) {
+        myCart = JSON.parse(json);
+    } else {
+        myCart = [];
+    }
+    return myCart;
+}
+
+export function finalOrder() {
+    const cart = getCart();
+    let orderDetails = [];
+    for (let i = 0; i < cart.length; i++) {
+        const cartItem = cart[i];
+        const book = findById(books, cartItem.id);
+        const eachOrder = (` ${cartItem.quantity} of ${book.name}`);
+        orderDetails.push(eachOrder);
+    }
+    return orderDetails;
 }

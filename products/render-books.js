@@ -1,3 +1,5 @@
+import { getCart, findById } from '../common/utils.js';
+
 export function renderBooks(book) {
     const li = document.createElement('li');
 
@@ -22,6 +24,26 @@ export function renderBooks(book) {
     const button = document.createElement('button');
     button.value = book.code;
     button.textContent = 'Add';
+    button.addEventListener('click', () => {
+        let cart = getCart();
+
+        const cartItems = findById(cart, book.id);
+        if (!cartItems) {
+            const initializedCartItem = {
+                id: book.id,
+                quantity: 1
+            };
+            cart.push(initializedCartItem);
+        } 
+        else {
+            cartItems.quantity++;
+        }
+
+        const stringCart = JSON.stringify(cart);
+        localStorage.setItem('CART', stringCart);
+        alert('One copy of ' + book.name + ' added to cart');
+    });
+
     p.append(button);
 
     li.append(p);
