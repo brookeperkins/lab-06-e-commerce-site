@@ -4,25 +4,35 @@ body {
     --color2: hsla(22, 26%, 96%, 1);
     --color3: hsla(5, 31%, 97%, 1);
     --color4: hsla(38, 35%, 99%, 1);
-    --color5: hsla(149, 26%, 63%, 1);
-    
+    --color5: hsla(149, 26%, 63%, 1);  
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px var(--color1);
     --defaultmargin: 30px;
     --footer-height: 30px;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center; 
     font-family: 'Nunito Sans', sans-serif;
     background-color: var(--color2);
 }
 
 header {
-    display: flex;
-    justify-content: center;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
     align-items: center;
     border: solid 2px var(--color5);
     color: var(--color2);
     background-color: var(--color1);
     height: var(--header-height);
+}
+
+header > h1 {
+    letter-spacing: 10px;
+    -webkit-text-stroke: .8px black;
 }
 
 nav {
@@ -71,6 +81,15 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     font-size: .5rem;
+    margin: 20px;
+}
+
+li { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 15px;
 }
 
 h2 {
