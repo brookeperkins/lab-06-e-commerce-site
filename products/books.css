@@ -32,7 +32,6 @@ header {
 
 header > h1 {
     letter-spacing: 10px;
-    -webkit-text-stroke: .8px black;
 }
 
 nav {

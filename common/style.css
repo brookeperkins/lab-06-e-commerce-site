@@ -25,7 +25,7 @@ main {
 }
 
 section {
-    border-radius: 50px 2px 50px 2px;
+    border-radius: 20px 2px 20px 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,15 +33,16 @@ section {
     background-color: var(--color1);
     width: 90%;
     max-width: 90%;
-    padding: 100px;
     margin: var(--default-margin);
     border: solid 2px var(--color5);
 }
 
 h1 {
+    letter-spacing: 10px;
     font-size: 2rem;
     font-weight: bold;
-    color: var(--color3)
+    color: var(--color3);
+    padding: 50px;
 }
 
 #book-button {
@@ -62,15 +63,14 @@ footer {
     position: fixed;
     bottom: 0;
     width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
     align-items: center;
+    justify-items: center;
     padding-top: var(--foot-pad);
     padding-bottom: var(--foot-pad);
     margin: var(--default-margin);
     font-size: .7rem;
     color: var(--color1);
     background-color: var(--color3);
-    border: solid 1px var(--color5);
+    border: solid 4px var(--color5);
 }
