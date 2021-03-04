@@ -1,1 +1,1 @@
-# lab-06-e-commerce-site
+# mini version of an e-commerce site in vanillajs
